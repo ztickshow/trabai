@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho tiago js</title>
+    <link rel="icon" href="js.png">
+    <script src="script.js"></script>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <H1 id="teste">
+        Seja bem vindo!!
+    </H1>
+
+    <button type="button"
+    onclick='document.getElementById("teste").innerHTML= "Voçê mudou o texto!"'> 
+    Click aqui para mudar o texto</button>
+    <br><br><br><br>
+   
+    <h2 id="texto">Esse texto pode sumir, basta dar um click no botão abaixo!</h2>
+    <button type ="button"
+    onclick="document.getElementById('texto').style.display='none'">
+    Click aqui para ocultar </button>
+<br><br><br><br>
+
+    <h2>Aqui tera uma mensagem secreta</h2>
+
+    <h3 id="texto2" style="display:none;">
+    Essa é a mensagem secreta!!
+    </h3>
+
+    <button type="button"
+    onclick="document.getElementById('texto2').style.display='block'">
+    Click aqui para mostrar a mensagem secreta </button>
+
+    <br><br><br><br>
+
+    <button onclick="document.getElementById('imagem1').src='capa gta5.png'">
+    Imagem 1 </button> 
+
+    <img id="imagem1" src="capa gta4.png" style="width: 300px"> 
+
+    <br><br><br><br>
+    
+    <button onclick="document.getElementById('imagem1').src='capa gta4.png'">
+    Imagem 2</button>
+   
+<br><br>
+
+    <h2 id="valor"></h2>
+
+    <script>
+        var Valor = 42;
+        var elementoH2 = document.getElementById('valor');
+        elementoH2.textContent = Valor;
+    </script>
+
+    <script>
+        function soma(p1, p2){
+            return p1 - p2;}
+
+    var resultado = soma(10, 5);
+    console.log(resultado);
+    </script>
+
+</body>
+</html>

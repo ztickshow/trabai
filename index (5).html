@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho tiago</title>
+    <link rel="icon" href="js.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div>
+        <script>
+                                            //MENSAGEM DE BEM VINDO
+        var sexo = prompt("Digite 'M' se for do sexo masculino ou 'F' se for do sexo feminino:");
+        switch (sexo) {
+        case 'M' && 'm':
+        alert("Seja bem-vindo!");
+        break;
+        case 'F' && 'f':
+        alert("Seja bem-vinda!");
+        break;
+        default:
+        alert("Sexo não reconhecido.");
+        break;
+     }
+        </script>
+    </div>
+
+    <div>
+        <script>
+                                            //imprimindo as disciplinas usando for
+
+        var disciplinas = ['Matemática', 'História', 'Física', 'Química', 'Inglês'];
+        for (var i = 0; i < disciplinas.length; i++) {
+        document.write(disciplinas[i] + "<br>");
+        }
+        </script>
+    </div> 
+
+
+<br><br><br><br>
+
+    <div>
+        <script>
+                                            //imprimindo as disciplinas usando while
+
+        var disciplinas = ['Matemática', 'História', 'Física', 'Química', 'Inglês'];
+        var i = 0;
+        while (i < disciplinas.length) {
+        document.write(disciplinas[i] + "<br>");
+        i++;
+}
+        </script>
+    </div>
+
+<br><br><br><br>
+
+    <div>
+        <script>
+                                            //imprimindo a tabuada
+    var numero = 7;
+    for (var i = 1; i <= 10; i++) {
+    var resultado = numero * i;
+    document.write(numero + " x " + i + " = " + resultado + "<br>");
+}                     
+        </script>
+    </div>
+
+
+<br><br><br><br>
+
+
+    <div>
+        <script>
+                                           //caracteristicas do carro     
+
+        var Carro = {
+        Marca: "Toyota",
+        Modelo: "Supra",
+        Cor: "Laranja",
+        Ano: 2022,
+        Potencia: "340 cv"
+        };
+    for (var caracteristica in Carro) {
+    document.write(caracteristica + ": " + Carro[caracteristica] + "<br>" );
+}
+
+        </script>
+    </div>
+
+</body>
+</html>
